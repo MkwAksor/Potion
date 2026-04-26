@@ -1,6 +1,8 @@
 import time
 from random import randint
 
+"""It's my first project, don't be too hard on me"""
+
 class Potions:
 
     def __init__(self, duration: int,
