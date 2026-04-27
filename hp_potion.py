@@ -19,7 +19,6 @@ class Potions:
         pass
     
     def use(self):
-        global drink
         
         use_number = int(input(f"У вас {self.number_of_potion}. Сколько зелий использовать?: "))
         
