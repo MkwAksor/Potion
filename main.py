@@ -35,14 +35,14 @@ def main():
             answer_2 = str(input('Хотите купить немного зелий? [ y / n ]: '))
             
             if answer_2 == 'y':
-                small_hp_p.potion_buy()
+                small_hp_p.potion_buy(mc)
                 buy = True
             else: time.sleep(1)
         
         if work == True and ((buy == True) 
                              or (small_hp_p.number_of_potion > 0)):
             print(f"Текущее кол-во зелий: {small_hp_p.number_of_potion}")
-            small_hp_p.use()
+            small_hp_p.use(mc)
 
 
 if __name__ == '__main__':

@@ -21,7 +21,7 @@ class Character:
 class MainCharacter(Character):
     
     def __init__(self, hp, money):
-        super.__init__(self, hp, money)
+        super().__init__(hp, money)
         
     def pay(self, amount):
         self.money -= amount

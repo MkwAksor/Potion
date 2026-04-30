@@ -11,7 +11,7 @@ class Potions:
         self.time_use = time_use
         self.number_of_potion = number_of_potion
 
-    def drink(self):
+    def drink(self, character):
         pass
     
     def potion_buy(self, character):
@@ -43,7 +43,7 @@ class Potions:
             
         else: print('Недостаточно монет >-<')
     
-    def use(self):
+    def use(self, character):
         
         use_number = int(input(f"У вас {self.number_of_potion} зелий. Сколько использовать?: "))
         
@@ -58,7 +58,7 @@ class Potions:
                     t_use -= 1
                     print(t_use, end=' ', flush=True)
                     
-                self.drink()
+                self.drink(character)
                 
             else: print('Нет необходимых зелий O_O')
 
